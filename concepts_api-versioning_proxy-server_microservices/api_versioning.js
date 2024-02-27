@@ -5,7 +5,15 @@
 // 1st Part :-   Major Release, Breaking Update [Entire New Application/Feature that can break the previous code base]
 // ^ :- Means Compatible with version 4, means ^ 4 should be fixed and make changes in 2nd and 3rd Part.
 
-
+// TODO:- NEED OF API VERSIONING
+/*
+Basically API versioning is needed as some website get stored as cache
+in some users local and if we directly chnage the Api core functionality
+then that might show user some unexpected errors. So we maintain some
+kind of version so that if new user comes get redirected to latest
+version and old get to previous API and to inform the old user we can
+notify them or change theri stored cache.
+*/
 
 const express = require('express');
 const app = express();
